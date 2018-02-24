@@ -15,31 +15,19 @@ header {
 	border-bottom: 2px solid #cccccc;
 }
 
-
-
 header>h1{
 	color: white;
 	background-color: #4aaaa5;
-	margin: 0;
+	margin: 0 0 0 80px;
 	padding: 20px;
-	margin-left: 80px;
 	text-align: center;    
 }
-
-
-
-.container-fluid {
-        padding: 0;
-  }
-
 
 .nav {
 	color: #cccccc;
 	text-align: center;
 	padding: 20px 0 20px 0;
-	margin-right: 200px;
-
-	
+	margin-right: 200px;	
 
 }
 
@@ -76,10 +64,13 @@ header>h1{
 	margin: 20px;
 }
 
+
+.header {
+	color: #4aaaa5;
+}
+
 h2 {
    color: #4aaaa5;
-
-
 }
 
 
@@ -88,8 +79,52 @@ body, html {
 	padding: 0;
 	background-image: url('../../assets/images/redox_02_@2X.png');
 	background-size: cover;
+	box-sizing: border-box;
+	font-family: 'Arial', 'Helvetica Neue','Helvetica', sans-serif;
 }
 
+#image {
+    width: 200px;
+    height: 200px;
+    padding: 0 15px 15px 0;
+    float: left;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto 90px auto;
+}
+.content {
+    flex: 2;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.sidebar{
+    flex: 1;
+    padding: 15px;
+    margin-left: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+#footer{
+    background-color: #666666;
+    color: #777777;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    clear: both;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+}
+.contact-image {
+    max-width: 200px;
+    max-height: 200px;
+}
 
 label{
 	display: block;
@@ -132,17 +167,13 @@ textarea{
 
 p{
 	color: #777777; 
-	font-style: 'Arial', 'Helvetica Neue', 'Helvetica' sans-serif;
-	
-
-
+	font-style: 'Arial', 'Helvetica Neue', 'Helvetica' sans-serif;	
 }
 
 .container{
 	width: 80%; 
 	margin: 0 auto;
 }
-
 
 .container1{
     background-color: #ffffff;
@@ -153,10 +184,8 @@ p{
 	border-color: #cccccc;
 	margin: 10px 20px 0 100px;
 	margin: 30px 20px 0 100px; 
-
 }
 	
-
 #flexinnercontainer1 {
 	background-color: #ffffff;
 	width: 650px;
@@ -221,96 +250,54 @@ p{
 	
 }
 
-/*Main Page*/
-/*MEDIA QUERIES*/
+/*Main Page
+MEDIA QUERIES*/
 
 @media only screen and (max-width: 980px) {
-        
-    #flexinnercontainer1 {
-	background-color: #ffffff;
-	display: inline-block;
-	width: 100%;
-	/*padding: 20px;*/
-	border: 1px solid;
-	border-color: #cccccc;
-	/*margin: 10px 20px 0 80px;*/
-	float: left;
-}
-*/
-.sidebar{
-	background-color: #ffffff;
-	float: right;
-	/*position: absolute;*/
-	display: inline-block;
-    top: 100%;
-   /* right: 300px;
-	width: 270px;
-	height: 200px;*/
-	border: 1px solid #cccccc;
-	box-shadow: 1px;
-	text-align:center;
 
-}
-
+.container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .sidebar {
+        margin-left: 0;
+    }
+    #image {
+        width: 100%;
+        height: auto;
+    }
+}        
+    
 
 @media only screen and (max-width: 768px) {
  
- #flexinnercontainer1 {
-	background-color: #ffffff;
-	width: 100%;
-	/*padding: 20px;*/
-	display: flex;
-	flex-direction: row;
-	border: 1px solid;
-	border-color: #cccccc;
-	/*margin: 10px 20px 0 80px;*/
-	float: left;
-	
- }
-
-  .sidebar{
-	background-color: #ffffff;
-	float: left;
-	/*position: absolute;*/
-	display: flex;
-	flex-direction: row;
-    /*top: 108px;
-    right: 300px;*/
-	width: 100%
-	/*height: 200px;*/
-	border: 1px solid #cccccc;
-	box-shadow: 1px;
-	text-align:center;          
+.container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .sidebar {
+        margin-left: 0;
+    }
+    #image {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 640px) {
 
-   #flexinnercontainer1 {
-	background-color: #ffffff;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	/*padding: 20px;*/
-	border: 1px solid;
-	border-color: #cccccc;
-	/*margin: 10px 20px 0 80px;*/
-	     
-}
-
-.sidebar{
-	background-color: #ffffff;
-	float: left;
-	/*position: absolute;*/
-	display: flex;
-	flex-direction: column;
-    /*top: 108px;
-    right: 300px;*/
-	width: 100%
-	/*height: 200px;*/
-	border: 1px solid #cccccc;
-	box-shadow: 1px;
-	text-align:center;
-}
-
-/*Contact Page*/
-/*MEDIA QUERIES*/
+  .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .sidebar {
+        margin-left: 0;
+    }
+    #image {
+        width: 100%;
+        height: auto;
+    }
+} 
